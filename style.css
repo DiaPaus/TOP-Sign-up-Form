@@ -3,20 +3,52 @@
     src:url("Norse-Bold.otf")
 }
 
+body{
+    background-color: black;
+    font-size:10px;
+    font-family:sans-serif;
+    
+}
+span{
+    font-style: italic;
+}
+
+h2{
+padding-right:3rem;
+}
+
 .container{
     display:flex;
-    width:100%;
+    width:70%;
+    height: 100vh;
     padding:1rem;
     margin:0;
-    }
+    margin: auto;
+            }
 
-img{
+.left-side img{
     width:100%;
-    height: 100%;
+    height:100vh;
     }
+input{
+    width:8rem;
+    min-width: auto;
+    border:solid 1px #E5E7EB;  
+    border-radius: 3px;  
+}
 
+input:focus{
+    outline:none;
+    border: 1px solid #2433d7;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+}
+
+input[type="password"]:invalid{
+    border: 1px solid red;
+}
 .logo img{
-    width:auto;
+    width:auto;   
+    height: 100%; 
 }
 
 .logo > *{
@@ -26,6 +58,7 @@ img{
 
 .logo{
 height:10%;
+padding:10px 0;
 display:flex;
 justify-content: center;
 align-items: center;
@@ -33,24 +66,41 @@ color:white;
 font-size:60px;
 width:100%;
 position:absolute;
-top:20%;
+top:29.5%;
 background-color: rgba(0,0,0,0.4);
 }
 
+footer{
+position:absolute;
+bottom:0;
+color:whitesmoke;
+margin:10px;
+font-size:smaller;
+left:30%;
+}
 
-.left-side,
-.right-side{
-    width:50%;
+.left-side
+{
+    width:35%;
     position:relative;
 }
 
 .right-side{
-    padding:50px 0 50px 15px;
+    width:65%;
     background-color: whitesmoke;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side > *{
+    padding-left:2rem;
 }
 
 form{
-    background-color: white;;
+    background-color: white; 
+    font-size:8px;   
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
@@ -63,4 +113,21 @@ label{
     display:flex;
     flex-direction: column;
     margin: 15px 40px 15px 0;
+}
+
+.btn{
+    margin-left:2rem;
+    margin-top:1rem;
+    background-color: rgb(12, 138, 96);
+    color:white; 
+    border:none;
+    border-radius:3px;
+    width:7rem;
+    font-size:8px; 
+    padding:8px 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
 }
